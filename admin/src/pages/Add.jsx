@@ -194,7 +194,71 @@ const Add = ({ token }) => {
 
       <div>
         <p className="mb-2">Product Sizes</p>
-        <div className="flex gap-3">
+        <div className="flex gap-8 mb-4">
+          {/* PVC connection size */}
+          <div
+            onClick={() =>
+              setSizes((prev) =>
+                prev.includes("36Inch")
+                  ? prev.filter((item) => item !== "36Inch")
+                  : [...prev, "36Inch"],
+              )
+            }
+          >
+            <p
+              className={`${sizes.includes("36Inch") ? "bg-pink-100" : "bg-slate-200"} px-3 py-1 cursor-pointer`}
+            >
+              36Inch
+            </p>
+          </div>
+          <div
+            onClick={() =>
+              setSizes((prev) =>
+                prev.includes("24Inch")
+                  ? prev.filter((item) => item !== "24Inch")
+                  : [...prev, "24Inch"],
+              )
+            }
+          >
+            <p
+              className={`${sizes.includes("24Inch") ? "bg-pink-100" : "bg-slate-200"} px-3 py-1 cursor-pointer`}
+            >
+              24Inch
+            </p>
+          </div>
+          <div
+            onClick={() =>
+              setSizes((prev) =>
+                prev.includes("18Inch")
+                  ? prev.filter((item) => item !== "18Inch")
+                  : [...prev, "18Inch"],
+              )
+            }
+          >
+            <p
+              className={`${sizes.includes("18Inch") ? "bg-pink-100" : "bg-slate-200"} px-3 py-1 cursor-pointer`}
+            >
+              18Inch
+            </p>
+          </div>
+        </div>
+        <div className="flex gap-8 mb-4">
+          <div
+            onClick={() =>
+              setSizes((prev) =>
+                prev.includes("6Inch")
+                  ? prev.filter((item) => item !== "6Inch")
+                  : [...prev, "6Inch"],
+              )
+            }
+          >
+            <p
+              className={`${sizes.includes("6Inch") ? "bg-pink-100" : "bg-slate-200"} px-3 py-1 cursor-pointer`}
+            >
+              6Inch
+            </p>
+          </div>
+
           <div
             onClick={() =>
               setSizes((prev) =>
@@ -246,19 +310,21 @@ const Add = ({ token }) => {
           <div
             onClick={() =>
               setSizes((prev) =>
-                prev.includes("XL")
-                  ? prev.filter((item) => item !== "XL")
-                  : [...prev, "XL"],
+                prev.includes("1¼Inch")
+                  ? prev.filter((item) => item !== "1¼Inch")
+                  : [...prev, "1¼Inch"],
               )
             }
           >
             <p
-              className={`${sizes.includes("XL") ? "bg-pink-100" : "bg-slate-200"} px-3 py-1 cursor-pointer`}
+              className={`${sizes.includes("1¼Inch") ? "bg-pink-100" : "bg-slate-200"} px-3 py-1 cursor-pointer`}
             >
               1¼ Inch
             </p>
           </div>
+        </div>
 
+        <div className="flex gap-6">
           <div
             onClick={() =>
               setSizes((prev) =>

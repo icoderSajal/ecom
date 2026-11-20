@@ -8,11 +8,14 @@ const Footer = () => {
         <div>
           <img src={assets.logo} className="mb-5 w-32" alt="" />
           <p className="w-full md:w-2/3 text-gray-600">
-            Dreams Clothing brings you the latest in fashion with trendy,
-            high-quality clothing for every occasion. Discover stylish
-            collections, enjoy a seamless shopping experience, and express your
-            unique style effortlessly. Fast shipping, exclusive deals, and
-            hassle-free returns await you!
+            Abhiyaan Sanitary and Plumber Service is a trusted plumbing service
+            provider in Bareilly. We serve Durga Nagar and nearby areas with
+            fast, affordable, and reliable solutions. If you are searching for a
+            plumber near you, we are ready to help.is a newly established shop
+            led by Sajal Bajaj, built on years of hands-on experience in
+            sanitary and plumbing work.We specialize in PVC and CPVC pipes,
+            ceramic sanitary items, wash basins, English seats, pipe fittings,
+            and modern bathroom accessories. Our experience
           </p>
         </div>
 
